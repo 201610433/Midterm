@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>짱구's Family</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+	background-color:tomato;
+}
+button{
+    padding:10px;
+    color:black;
+}
+button:hover{
+	background-color:#cc99ff;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+button:active{
+	background-color:#66ff99;
+	border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+</style>
+
+</head>
+<body id="Family">
+
+<div style="list-style:none;">
+	<li>
+	<iframe width="750" height="450" src="https://www.youtube.com/embed/WCPwJWVXgcI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</li>
+	<li>
+	<img id="myImg1" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F3112582525%2F8084ccf19d710deedb17ff8ef293ac65_400x400.png&f=1">
+	</li>
+</div>
+	
+	
+<h2 id ="message">짱구네 가족</h2>
+
+<button type="button" onclick="짱구()">짱구</button>
+<button type="button" onclick="봉미선()">봉미선</button>
+<button type="button" onclick="신영만()">신영만</button>
+<button type="button" onclick="짱아()">짱아</button>
+<button type="button" onclick="흰둥이()">흰둥이</button>
+
+<p style= color:"white">짱구 is good!</p>
+<i class="fa fa-home"></i>
+<i class="fa fa-tv"></i>
+<i class="fa fa-heart"></i>
+
+
+	
+<script>
+var bodyElement=document.getElementById("Family");
+var numberOfClicks=0;
+var Image1="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F3112582525%2F8084ccf19d710deedb17ff8ef293ac65_400x400.png&f=1";
+var Image2="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.tv-asahi.co.jp%2Fshinchan%2Fcharacter%2Fimg%2F03.png&f=1";
+var Image3="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.tv-asahi.co.jp%2Fshinchan%2Fcharacter%2Fimg%2F02.png&f=1";
+var Image4="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F813413656838873091%2FEyZe9UX__400x400.jpg&f=1";
+var Image5="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-0fMyx9jjkRQ%2FUMq8KbjX-lI%2FAAAAAAAAAJ0%2FnIT56Jsf2pg%2Fs1600%2FShiro.gif&f=1";
+function 짱구(){
+var imageElement=document.getElementById("myImg1");
+imageElement.src=Image1;
+bodyElement.style.backgroundColor="tomato";
+}
+function 봉미선(){
+var imageElement=document.getElementById("myImg1");
+imageElement.src=Image2;
+bodyElement.style.backgroundColor="#80ffe5";
+}
+function 신영만(){
+var imageElement=document.getElementById("myImg1");
+imageElement.src=Image3;
+bodyElement.style.backgroundColor="#33ccff";
+}
+function 짱아(){
+var imageElement=document.getElementById("myImg1");
+imageElement.src=Image4;
+bodyElement.style.backgroundColor="#ffff4d";
+}
+function 흰둥이(){
+var imageElement=document.getElementById("myImg1");
+imageElement.src=Image5;
+bodyElement.style.backgroundColor="#ff66ff";
+}
+function clickedButton()
+{
+ // 1.
+  numberOfClicks = numberOfClicks +1;
+ // 2.
+  var messageElement= document.getElementById("message"); 
+ // 3.
+   messageElement.innerHTML="YOU HAVE CLICKED "+numberOfClicks+" times.";
+}
+</script>
+
+
+ 
+ 
+</body>
+</html>
